@@ -1,866 +1,1376 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Balogun Ridwan Babatunde Ridbay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Full Stack Software Developer, Ikeja, Lagos, Nigeria; ReactJS, ReactNative, NodeJS, FireBase, Gatsby, PWA, WordPress"
+    />
+    <meta name="keywords" content="Balogun, Ridwan, Babatunde, Ridbay,Full Stack Software Developer, Ikeja, Lagos, Nigeria; ReactJS, ReactNative, NodeJS, FireBase, Gatsby, PWA, WordPress" />
+    <meta name="author" content="Balogun Ridwan Babatunde Ridbay" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Balogun Ridwan Babatunde Ridbay</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Full Stack Developer; ReactJS, ReactNative, NodeJS, FireBase, Gatsby, PWA" />
-	<meta name="keywords" content="Balogun, Ridwan, Babatunde, Ridbay" />
-	<meta name="author" content="Balogun Ridwan Babatunde Ridbay" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <body>
+    <div id="colorlib-page">
+      <div class="container-wrap">
+        <a
+          href="#"
+          class="js-colorlib-nav-toggle colorlib-nav-toggle"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+          ><i></i
+        ></a>
+        <aside
+          id="colorlib-aside"
+          role="complementary"
+          class="border js-fullheight"
+        >
+          <div class="text-center">
+            <div
+              class="author-img"
+              style="background-image: url(images/about.jpg)"
+            ></div>
+            <h1 id="colorlib-logo"><a href="index.html">Balogun Ridwan</a></h1>
+            <span class="position"
+              ><a href="#">Software Developer</a> in Nigeria</span
+            >
+          </div>
+          <nav id="colorlib-main-menu" role="navigation" class="navbar">
+            <div id="navbar" class="collapse">
+              <ul>
+                <li class="active">
+                  <a href="#" data-nav-section="home">Home</a>
+                </li>
+                <li><a href="#" data-nav-section="about">About</a></li>
+                <li><a href="#" data-nav-section="services">Services</a></li>
+                <li><a href="#" data-nav-section="skills">Skills</a></li>
+                <li><a href="#" data-nav-section="education">Education</a></li>
+                <li>
+                  <a href="#" data-nav-section="experience">Experience</a>
+                </li>
+                <!--<li><a href="#" data-nav-section="work">Work</a></li>-->
+                <li>
+                  <a href="#" data-nav-section="certification">Certification</a>
+                </li>
+                <li><a href="#" data-nav-section="contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
 
-</head>
+          <div class="colorlib-footer">
+            <p>
+              <small>
+                <span
+                  >Facebook:
+                  <a href="https://facebook.com/ridbay" target="_blank"
+                    >ridbay</a
+                  ></span
+                >
+                <span
+                  >Twitter:
+                  <a href="https://twitter.com/ridbay" target="_blank"
+                    >@ridbay</a
+                  ></span
+                >
+                <span
+                  >Instagram:
+                  <a href="https://instagram.com/ridbay" target="_blank"
+                    >@ridbay</a
+                  ></span
+                >
+                <span
+                  >Linkedin:
+                  <a href="https://linkedin.com/in/ridbay" target="_blank"
+                    >ridbay</a
+                  ></span
+                >
+                <span
+                  >Whatsapp:
+                  <a
+                    href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is"
+                    target="_blank"
+                    >Chat with me</a
+                  ></span
+                >
+              </small>
+            </p>
 
-<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">Balogun Ridwan</a></h1>
-					<span class="position"><a href="#">Software Developer</a> in Nigeria</span>
-				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="services">Services</a></li>
-							<li><a href="#" data-nav-section="skills">Skills</a></li>
-							<li><a href="#" data-nav-section="education">Education</a></li>
-							<li><a href="#" data-nav-section="experience">Experience</a></li>
-							<!--<li><a href="#" data-nav-section="work">Work</a></li>-->
-							<li><a href="#" data-nav-section="certification">Certification</a></li>
-							<li><a href="#" data-nav-section="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
+            <ul>
+              <li>
+                <a href="https://facebook.com/ridbay"
+                  ><i class="icon-facebook2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ridbay"
+                  ><i class="icon-twitter2"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/ridbay"
+                  ><i class="icon-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/ridbay"
+                  ><i class="icon-linkedin2"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is"
+                  ><i class="icon-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
 
-				<div class="colorlib-footer">
-					<p><small>
-							<span>Facebook: <a href="https://facebook.com/ridbay" target="_blank">ridbay</a></span>
-							<span>Twitter: <a href="https://twitter.com/ridbay" target="_blank">@ridbay</a></span>
-							<span>Instagram: <a href="https://instagram.com/ridbay" target="_blank">@ridbay</a></span>
-							<span>Linkedin: <a href="https://linkedin.com/in/ridbay" target="_blank">ridbay</a></span>
-							<span>Whatsapp: <a
-									href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is"
-									target="_blank">Chat with me</a></span>
-						</small></p>
+        <div id="colorlib-main">
+          <section id="colorlib-hero" class="js-fullheight" data-section="home">
+            <div class="flexslider js-fullheight">
+              <ul class="slides">
+                <li style="background-image: url(images/img_bg_1.png)">
+                  <div class="overlay"></div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div
+                        class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
+                      >
+                        <div class="slider-text-inner js-fullheight">
+                          <div class="desc">
+                            <h1>Hi! <br />I develop Front-End</h1>
+                            <h2>
+                              Seasoned and independent Front End Developer with
+                              5+ years of experience in blending the art of
+                              design with skill of programming to deliver an
+                              immersive and engaging user experience through
+                              efficient website development, proactive feature
+                              optimization, and relentless debugging.
+                              <a href="#" target="_blank"></a>
+                            </h2>
+                            <p>
+                              <a
+                                href="doc/BALOGUNRIDWANCV.pdf"
+                                class="btn btn-primary btn-learn"
+                                >Download CV <i class="icon-download4"></i
+                              ></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li style="background-image: url(images/img_bg_2.png)">
+                  <div class="overlay"></div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div
+                        class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
+                      >
+                        <div class="slider-text-inner">
+                          <div class="desc">
+                            <h1>Hey! <br />I develop Back-End</h1>
+                            <h2>
+                              Backend Developer with 3+ years of experience in
+                              Optimizing applications for maximum speed and
+                              scalability, Co-operating with other front-end
+                              developers and product managers, Solving any
+                              problem that challenges.<a
+                                href="#"
+                                target="_blank"
+                              ></a>
+                            </h2>
+                            <!--<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>-->
+                            <p>
+                              <a
+                                href="doc/BALOGUNRIDWANCV.pdf"
+                                class="btn btn-primary btn-learn"
+                                >Download CV <i class="icon-download4"></i
+                              ></a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-					<ul>
-						<li><a href="https://facebook.com/ridbay"><i class="icon-facebook2"></i></a></li>
-						<li><a href="https://twitter.com/ridbay"><i class="icon-twitter2"></i></a></li>
-						<li><a href="https://instagram.com/ridbay"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://linkedin.com/in/ridbay"><i class="icon-linkedin2"></i></a></li>
-						<li><a
-								href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is"><i
-									class="icon-whatsapp"></i></a></li>
-					</ul>
-				</div>
+          <section class="colorlib-about" data-section="about">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="col-md-12">
+                      <div class="about-desc">
+                        <span class="heading-meta">About Ridwan</span>
+                        <h2 class="colorlib-heading">Who Is He?</h2>
+                        <p>
+                          <strong>Balogun Ridwan</strong> is a software
+                          developer with a vast array of knowledge in many
+                          different front-end and back-end technologies,
+                          responsive frameworks, databases, and best code
+                          practices. His objective is simply to be the best
+                          software developer that he can be and to contribute to
+                          the technology industry all that he knows and can do.
+                          He is dedicated to perfecting his craft by learning
+                          from more seasoned developers, remaining humble, and
+                          continuously making strides to learn all that he can
+                          about development.
+                        </p>
+                        <p>
+                          While a student at Federal University of Technology,
+                          Akure, He studied Metallurgical and Materials
+                          Engineering, and he led a team of six to the 2015
+                          Google Online Marketing Challenge (Middle East/Africa
+                          Business categories).
+                        </p>
+                        <p>
+                          In 2016, he facilitated a programme that trained over
+                          100 youths on how to develop websites, design graphics
+                          and digital marketing. Currently undergoing software
+                          development training with Microsoft Inc and also
+                          working as a business analyst with a startup company
+                          in Lagos, Nigeria. He possesses easily transferable
+                          skills such as organization, working with teams, and
+                          analytical skills.
+                        </p>
+                        <p>
+                          He is an Innovative optimized solution seeker. Excited
+                          to be at the deployment phase of his new career as a
+                          software developer. He is ambitious, adventurous,
+                          assiduous, and animated.
+                        </p>
+                        <p>
+                          Apart from being a Sofware Developer, a Digital
+                          Marketer, an IT Business Analyst, He enjoys most of
+                          his time being outdoors. He loves to participate in
+                          any form of Sports and Gaming. When forced indoors, he
+                          follows a number of sci-fi and fantasy genre movies.
+                          He is an aspiring
+                          <strong>Machine Learning Sofware Engineer</strong>,
+                          and he spends a large amount of his free time
+                          exploring the latest technology advancements in the
+                          software development world.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="services color-1">
+                        <span class="icon2"><i class="icon-bulb"></i></span>
+                        <h3>Software Development</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="services color-2">
+                        <span class="icon2"
+                          ><i class="icon-globe-outline"></i
+                        ></span>
+                        <h3>Digital Marketing/SEO</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInTop"
+                    >
+                      <div class="services color-3">
+                        <span class="icon2"><i class="icon-data"></i></span>
+                        <h3>Software/App Testing</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="services color-4">
+                        <span class="icon2"><i class="icon-phone3"></i></span>
+                        <h3>IT Business Analysis</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-md-12 animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="hire">
+                        <h2>
+                          I am happy to inform you <br />that I have 70+
+                          projects done sucessfully!
+                        </h2>
+                        <a
+                          href="mailto:balogunridwan@gmail.com"
+                          class="btn-hire"
+                          >Hire me</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-			</aside>
+          <section class="colorlib-services" data-section="services">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">What I do?</span>
+                  <h2 class="colorlib-heading">
+                    Here are some of my expertise
+                  </h2>
+                </div>
+              </div>
+              <div class="row row-pt-md">
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-1">
+                    <span class="icon">
+                      <i class="icon-bulb"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Front-End Dev.</h3>
+                      <p>
+                        I design & develop unique user experiences that drives
+                        interaction.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-2">
+                    <span class="icon">
+                      <i class="icon-data"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Back-End Dev.</h3>
+                      <p>
+                        I am responsible for Designing and developing a highly
+                        scalable platforms
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-3">
+                    <span class="icon">
+                      <i class="icon-phone3"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Digital Marketing</h3>
+                      <p>
+                        I develop effective online marketing strategies -
+                        SEO,SEM PPC, Social Media, Email Marketing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-4">
+                    <span class="icon">
+                      <i class="icon-layers2"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>IT Business Analysis</h3>
+                      <p>
+                        I can provide unparalleled IT business analysis &
+                        requirements services for your organization
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-5">
+                    <span class="icon">
+                      <i class="icon-data"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>Software Testing & QA</h3>
+                      <p>
+                        Hire me to ensure the highest level of software/app
+                        quality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center animate-box">
+                  <div class="services color-6">
+                    <span class="icon">
+                      <i class="icon-phone3"></i>
+                    </span>
+                    <div class="desc">
+                      <h3>SMM/SEM/SEO</h3>
+                      <p>
+                        I can help with Search Engine Optimization, Search
+                        Engine Marketing, Social Media Marketing services
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-			<div id="colorlib-main">
-				<section id="colorlib-hero" class="js-fullheight" data-section="home">
-					<div class="flexslider js-fullheight">
-						<ul class="slides">
-							<li style="background-image: url(images/img_bg_1.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div
-											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner js-fullheight">
-												<div class="desc">
-													<h1>Hi! <br>I develop Software</h1>
-													<h2>Software Engineer with 4 years of experience and track record in
-														Web & Mobile applications development. <a href="#"
-															target="_blank"></a></h2>
-													<p><a href="doc/BALOGUNRIDWANCV.pdf"
-															class="btn btn-primary btn-learn">Download CV <i
-																class="icon-download4"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li style="background-image: url(images/img_bg_2.jpg);">
-								<div class="overlay"></div>
-								<div class="container-fluid">
-									<div class="row">
-										<div
-											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner">
-												<div class="desc">
-													<h1>Hi! <br>I do Digital Marketing</h1>
-													<h2>Seasoned digital marketer with 5+ years of experience building
-														and implementing strategies focused on SEO, email marketing, and
-														Adwords largely for small to medium sized ecommerce sites.<a
-															href="#" target="_blank"></a></h2>
-													<!--<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>-->
-													<p><a href="doc/BALOGUNRIDWANCV.pdf"
-															class="btn btn-primary btn-learn">Download CV <i
-																class="icon-download4"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
+          <!-- <div
+            id="colorlib-counter"
+            class="colorlib-counters"
+            style="background-image: url(images/cover_bg_1.jpg)"
+            data-stellar-background-ratio="0.5"
+          >
+            <div class="overlay"></div>
+            <div class="colorlib-narrow-content">
+              <div class="row"></div>
+              <div class="row">
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="70"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Cups of coffee</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="65"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Projects</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="30"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Clients</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                  <span
+                    class="colorlib-counter js-counter"
+                    data-from="0"
+                    data-to="10"
+                    data-speed="5000"
+                    data-refresh-interval="50"
+                  ></span>
+                  <span class="colorlib-counter-label">Partners</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
-				<section class="colorlib-about" data-section="about">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="col-md-12">
-										<div class="about-desc">
-											<span class="heading-meta">About Me</span>
-											<h2 class="colorlib-heading">Who Am I?</h2>
-											<p><strong>Balogun Ridwan</strong> is a software developer with a vast array
-												of knowledge in many different front-end and back-end technologies,
-												responsive frameworks, databases, and best code practices. His objective
-												is simply to be the best software developer that he can be and to
-												contribute to the technology industry all that he knows and can do. He
-												is dedicated to perfecting his craft by learning from more seasoned
-												developers, remaining humble, and continuously making strides to learn
-												all that he can about development.</p>
-											<p>While a student at Federal University of Technology, Akure, He studied
-												Metallurgical and Materials Engineering, and he led a team of six to the
-												2015 Google Online Marketing Challenge (Middle East/Africa Business
-												categories).</p>
-											<p>In 2016, he facilitated a programme that trained over 100 youths on how
-												to develop websites, design graphics and digital marketing. Currently
-												undergoing software development training with Microsoft Inc and also
-												working as a business analyst with a startup company in Lagos, Nigeria.
-												He possesses easily transferable skills such as organization, working
-												with teams, and analytical skills.</p>
-											<p>He is an Innovative optimized solution seeker. Excited to be at the
-												deployment phase of his new career as a software developer. He is
-												ambitious, adventurous, assiduous, and animated.</p>
-											<p>Apart from being a Sofware Developer, a Digital Marketer, an IT Business
-												Analyst, He enjoys most of his time being outdoors. He loves to
-												participate in any form of Sports and Gaming.
-												When forced indoors, he follows a number of sci-fi and fantasy genre
-												movies. He is an aspiring <strong>Machine Learning Sofware
-													Engineer</strong>, and he spends a large amount of his
-												free time exploring the latest technology advancements in the software
-												development world.</p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-										<div class="services color-1">
-											<span class="icon2"><i class="icon-bulb"></i></span>
-											<h3>Web Development/Design</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-										<div class="services color-2">
-											<span class="icon2"><i class="icon-globe-outline"></i></span>
-											<h3>Digital Marketing/SEO</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-										<div class="services color-3">
-											<span class="icon2"><i class="icon-data"></i></span>
-											<h3>Software/App Testing</h3>
-										</div>
-									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-										<div class="services color-4">
-											<span class="icon2"><i class="icon-phone3"></i></span>
-											<h3> IT Business Analysis</h3>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-										<div class="hire">
-											<h2>I am happy to inform you <br>that I have 50+ projects done sucessfully!
-											</h2>
-											<a href="mailto:me@balogunridwan.com" class="btn-hire">Hire me</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <section class="colorlib-skills" data-section="skills">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">My Specialty</span>
+                  <h2 class="colorlib-heading animate-box">Technical Skills</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-12 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <!--<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>-->
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>
+                      Front-End: HML5, CSS3, JavaScript,ReactJS, React
+                      Native,WordPress
+                    </h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>80%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>
+                      Frameworks: ReactJs, React Native, JQuery, Bootstrap,
+                      Material-UI
+                    </h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>80%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>
+                      Back-End: NodeJS, C#, MongoDB, PostgreSQL, MySQL, RESTful
+                      APIs, Microservices, Monoliths.
+                    </h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>80%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Databases: MySQL, PostgreSQL, MongoDB, FireBase</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-4"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>90%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>
+                      Dev Tools: NPM, Git, Bitbucket, Github, Android Studio,
+                      VSC
+                    </h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-1"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>80%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Methodologies: Agile, Test Driven Development</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-2"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>90%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="progress-wrap">
+                    <h3>
+                      Marketing: Google Adwords, Adsense, Analytics, SEO, SEM,
+                      SMM
+                    </h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-5"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>98%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 animate-box"
+                  data-animate-effect="fadeInRight"
+                >
+                  <div class="progress-wrap">
+                    <h3>Business Analysis & Software Testing/QA</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar color-6"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="width: 100%"
+                      >
+                        <!--<span>50%</span>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <section class="colorlib-education" data-section="education">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Education</span>
+                  <h2 class="colorlib-heading animate-box">Education</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-md-12 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <div class="fancy-collapse-panel">
+                    <div
+                      class="panel-group"
+                      id="accordion"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                              >B. Eng (Hons) Metallurgical & Materials
+                              Engineering
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo"
+                          class="panel-collapse collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingTwo"
+                        >
+                          <div class="panel-body">
+                            <h3>
+                              Federal University of Technology, Akure (2010 –
+                              2015)
+                            </h3>
+                            <p>
+                              <strong
+                                >Thesis: “Effect of sintering temperature on the
+                                mechanical properties of clay bonded carbon
+                                refractories”
+                              </strong>
+                            </p>
+                            <ul>
+                              <li>
+                                Relevant modules: Refractory Technology, Mineral
+                                Processing, Corrosion maintenance, Foundry
+                                Technology, Materials failure analysis,
+                                Composites.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                          <h4 class="panel-title">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFive"
+                              aria-expanded="false"
+                              aria-controls="collapseFive"
+                              >High School Secondary Education
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFive"
+                          class="panel-collapse collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingFive"
+                        >
+                          <div class="panel-body">
+                            <h3>
+                              Ibadan Grammar School, Molete, Ibadan (2001– 2007)
+                            </h3>
+                            <p>
+                              <strong
+                                >West African Examination Certification</strong
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-				<section class="colorlib-services" data-section="services">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">What I do?</span>
-								<h2 class="colorlib-heading">Here are some of my expertise</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="icon-bulb"></i>
-									</span>
-									<div class="desc">
-										<h3>Website Dev.</h3>
-										<p>I provide expert web dev services to take your online presence to the next
-											level.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software Dev.</h3>
-										<p>I can help you create innovative, engaging products, ensuring rapid time to
-											market.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Digital Marketing</h3>
-										<p>I develop effective online marketing strategies - SEO, PPC, Social Media,
-											Email Marketing.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="icon-layers2"></i>
-									</span>
-									<div class="desc">
-										<h3>IT Business Analysis</h3>
-										<p>I can provide unparalleled IT business analysis & requirements services for
-											your organization</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software Testing & QA</h3>
-										<p>Hire me to ensure the highest level of software/app quality. </p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>SMM/SEM/SEO</h3>
-										<p>I can help with Search Engine Optimization, Search Engine Marketing, Social
-											Media Marketing services</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <section class="colorlib-experience" data-section="experience">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Experience</span>
+                  <h2 class="colorlib-heading animate-box">Work Experience</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="timeline-centered">
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-5">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-				<div id="colorlib-counter" class="colorlib-counters"
-					style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-					<div class="overlay"></div>
-					<div class="colorlib-narrow-content">
-						<div class="row">
-						</div>
-						<div class="row">
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="70" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Cups of coffee</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="65" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Projects</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Clients</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Partners</span>
-							</div>
-						</div>
-					</div>
-				</div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Senior Back-End Developer (FinTech),</a
+                            ><span> 2021</span>
+                          </h2>
+                          <p>
+                            <strong
+                              >Pandar Resources, Lagos, Nigeria</strong
+                            >
+                          </p>
+                          <ul>
+                            <li>
+								Developed the back-end of the Cryptocurrency E-Wallet system
+                            </li>
+                            <li>
+								Providing production support for problems ranging from customer satisfaction to SQL queries to source code development.
+                            </li>
+                            <li>
+								Working directly with the business to implement features and understand use cases.
+                            </li>
+                            <li>
+								Building business logic and exposed RESTful APIs to be consumed.
+                            </li>
+                            <li>
+                              <strong>Tools:</strong> NodeJs, ExpressJS, MariaDB, MySQL, Linux server, cPanel WHM, Sentry.io, Git/GitHub, PHP, 3rd Party API services.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-6">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-				<section class="colorlib-skills" data-section="skills">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Specialty</span>
-								<h2 class="colorlib-heading animate-box">Technical Skills</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<!--<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>-->
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Front-End Languages: CSS, HTML, Javascript, PWAs</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>80%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Frameworks: ReactJs, React Native, JQuery, Bootstrap, Material-UI</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>80%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Back-End Techs: NodeJs, ExpressJs, RESTful APIs</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>80%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Databases: MySQL, PostgreSQL, MongoDB, FireBase</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>90%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Dev Tools: NPM, Git, Bitbucket, Github, Android Studio, VSC</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>80%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Methodologies: Agile, Test Driven Development</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>90%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Marketing: Google Adwords, Adsense, Analytics, SEO, SEM, SMM</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="100"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>98%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Business Analysis & Software Testing/QA</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="50"
-											aria-valuemin="0" aria-valuemax="100" style="width:100%">
-											<!--<span>50%</span>-->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Full-stack Developer/Tech Lead (Remote),</a
+                            ><span> 2020</span>
+                          </h2>
+                          <p>
+                            <strong
+                              >Prudent Digital International, Dartford, Kent, England</strong
+                            >
+                          </p>
+                          <ul>
+                            <li>
+								Developed the front-end & back-end of an ecommerce & real estate  applications
+                            </li>
+                            <li>
+								Provided technical leadership to project team members and responded to inquiries regarding errors or questions about programs 
+                            </li>
+                            <li>
+								Worked closely with other groups like product, business analyst, quality assurance, and project management resources throughout delivery of solutions.
+                            </li>
+                            <li>
+								•Perform system walk-through of technical and operational features for new or existing systems 
+                            </li>
+                            <li>
+                              <strong>Tools:</strong> Git/GitHub, Bitirx24, ReactJS, jQuery, Bootstrap, MUI, ExpressJS, NodeJS, MySQL, Zoom, Linode Server. 
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-7">
+                          <i class="icon-pen2"></i>
+                        </div>
 
-				<section class="colorlib-education" data-section="education">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
-								<h2 class="colorlib-heading animate-box">Education</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Full-Stack Software Developer/Software Development Management,</a
+                            ><span> 2019</span>
+                          </h2>
+                          <p>
+                            <strong
+                              >TechDigi Media Solutions, Lagos, Nigeria</strong
+                            >
+                          </p>
+                          <ul>
+                            <li>
+                              Developed a full-stacked banking app with React,
+                              MUI, Firebase
+                            </li>
+                            <li>
+                              Developed a full-stacked Facial Recognition app,
+                              ReactJS and ClariFai API.
+                            </li>
+                            <li>
+                              Liaised with back-end developers, front-end
+                              developers, quality assurance testers, and CTOs as
+                              needed.
+                            </li>
+                            <li>
+                              Managed time-sensitive updates, including content
+                              changes and database upgrades.
+                            </li>
+                            <li>
+                              <strong>Tools:</strong> ReactJS, jQuery,
+                              Bootstrap, ClariFai API, MUI, ExpressJS, NodeJS,
+                              Firebase, PostgreSQL.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">B. Eng (Hons) Metallurgical &
-														Materials Engineering
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<h3>Federal University of Technology, Akure (2010 – 2015) </h3>
-													<p><strong>Thesis: “Effect of sintering temperature on the
-															mechanical properties of clay bonded carbon refractories”
-														</strong></p>
-													<ul>
-														<li>Relevant modules: Refractory Technology, Mineral Processing,
-															Corrosion maintenance, Foundry Technology, Materials failure
-															analysis, Composites. </li>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInRight"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-2">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#"
+                              >Software Developer & IT Business Analyst,
+                            </a>
+                            <span> 2018</span>
+                          </h2>
+                          <p>
+                            <strong
+                              >Artoas Global Limted, Lagos, Nigeria
+                            </strong>
+                          </p>
+                          <ul>
+                            <li>
+                              Documented business functional & non-functional
+                              requirements.
+                            </li>
+                            <li>
+                              Generated process/data flow diagrams, use cases
+                              and user guides.
+                            </li>
+                            <li>
+                              Collaborated and liaised with development, client,
+                              and quality assurance teams.
+                            </li>
+                            <li>
+                              Developed new websites and redeveloped existing
+                              websites as required.
+                            </li>
+                            <li>
+                              Proactively monitored applications, system
+                              software and/or hardware operations
+                            </li>
+                            <li>
+                              Provided administration and maintenance of Linux
+                              servers and storage facilities.
+                            </li>
+                            <li>
+                              <strong>Tools:</strong> ReactJS, Trello, Slack,
+                              Pivotal Tracker, Microsoft Office Suite, Google
+                              Drive, CMS, WHM/Cpanel
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
-													</ul>
-												</div>
-											</div>
-										</div>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-3">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Digital Marketing Analyst, </a>
+                            <span> 2017</span>
+                          </h2>
+                          <p><strong>Red Media, Lagos, Nigeria</strong></p>
+                          <ul>
+                            <li>
+                              Developed digital marketing campaign strategies.
+                            </li>
+                            <li>
+                              Bench-marked performance across all online
+                              channels and advised on KPIs.
+                            </li>
+                            <li>
+                              Used methodical performance analysis to
+                              influence/support campaign strategies.
+                            </li>
+                            <li>
+                              Performed ROI analysis to evaluate the efficiency
+                              and effectiveness of different marketing
+                              campaigns.
+                            </li>
+                            <li>
+                              <strong>Tools:</strong> Google AdWords, Adsense,
+                              Analytics, Facebook/Twitter/Linkedin Ad Managers.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInTop"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-4">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Website Developer & Digital Marketer</a>
+                            <span> 2016 </span>
+                          </h2>
+                          <p><strong>Niji Group, Lagos, Nigeria</strong></p>
+                          <ul>
+                            <li>Developed all the company’s websites.</li>
+                            <li>
+                              Implemented Search Engine Optimization (SEO) and
+                              Search Engine Marketing (SEM) programs.
+                            </li>
+                            <li>
+                              Monitored website content for out-of-date
+                              postings.
+                            </li>
+                            <li>
+                              Provided input, helped formulate online strategy
+                              and approached consistency with overall company
+                              objectives.
+                            </li>
+                            <li>
+                              Managed, maintained and enhanced the company’s
+                              presence on social media sites (e.g. Facebook,
+                              Twitter, YouTube)
+                            </li>
+                            <li>
+                              Created e-mail marketing and promotion campaigns.
+                            </li>
+                            <li>
+                              <strong>Tools: </strong>Wordpress, Google AdWords,
+                              Adsense, Analytics, Facebook/Twitter/Linkedin Ad
+                              Managers.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingFive">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseFive" aria-expanded="false"
-														aria-controls="collapseFive">High School Secondary Education
-													</a>
-												</h4>
-											</div>
-											<div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingFive">
-												<div class="panel-body">
-													<h3>Ibadan Grammar School, Molete, Ibadan (2001– 2007)</h3>
-													<p><strong>West African Examination Certification</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+                    <article
+                      class="timeline-entry animate-box"
+                      data-animate-effect="fadeInLeft"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-5">
+                          <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                          <h2>
+                            <a href="#">Team captain</a> <span> 2015</span>
+                          </h2>
+                          <p>
+                            <strong
+                              >Google Online Marketing Challenge (Middle East &
+                              Africa Business Award Finals)</strong
+                            >
+                          </p>
+                          <ul>
+                            <li>
+                              Partnered with Niji Group (www.nijigroup.com) on
+                              creating a 3-week Google Adwords online marketing
+                              campaign to increase the awareness of their line
+                              of processed foods, engineering, farms and a hotel
+                              service and to increase their website traffic.
+                            </li>
+                            <li>
+                              At the end of the 3 weeks campaign, we achieved
+                              <b
+                                >75.8 thousand impressions, 694 clicks to the
+                                website, $0.36 average CPC and 0.92% CTR
+                              </b>
+                              with Google Analytics data indicating that the
+                              campaign increased Niji Group’s website page views
+                              as there are
+                              <b
+                                >280 new visits, 257 unique visitors and 410
+                                page views</b
+                              >.
+                            </li>
+                            <li>
+                              We made it to the 2015 GOMC finals (Middle
+                              East/Africa Business category) out of over
+                              <b>100,000</b> teams that participated globally.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
 
-				<section class="colorlib-experience" data-section="experience">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Work Experience</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="timeline-centered">
+                    <article
+                      class="timeline-entry begin animate-box"
+                      data-animate-effect="fadeInBottom"
+                    >
+                      <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-none"></div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
+          <section class="colorlib-about" data-section="certification">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="row row-bottom-padded-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="col-md-12">
+                      <div class="about-desc">
+                        <span class="heading-meta">Certifications</span>
+                        <h2 class="colorlib-heading">My Certifications</h2>
+                        <ul>
+							<li>
+								The Complete ASP.NET MVC 5 Course, Teachable 2021
+							  </li>
+							  <li>
+								Microservices with Node JS & ReactJS, Udemy 2020
+							  </li>
+                          <li>
+                            Complete React Developer (React, Redux, Hooks,
+                            GraphQL), Udemy 2019
+                          </li>
+                          <li>The Complete Web Developer, Udemy 2019</li>
+                          <li>
+                            Selenium Web Driver with Java (App/Software
+                            automation testing), Udemy 2018
+                          </li>
+                          <li>
+                            Mobile Web Specialist, Andela Learning Community
+                            2018
+                          </li>
+                          <li>
+                            Front End Web Development, Andela Learning Community
+                            2018
+                          </li>
+                          <li>
+                            Telecommunication Power Training, University of
+                            Huawei, 2018
+                          </li>
+                          <li>Javascript, PHP, SQL Training, Sololearn 2018</li>
+                          <li>
+                            Android Development for Beginners,Andela Learning
+                            Community 2017
+                          </li>
+                          <li>Google Adwords Search Certification, 2017</li>
+                          <li>Google Analytics Certification, 2017</li>
+                          <li>Google Mobile Sites Certification, 2017</li>
+                          <li>
+                            Digital Skills for Africa Online Marketing
+                            Fundamentals, 2017
+                          </li>
+                          <li>
+                            Google Online Marketing Challenge (Adwords Business
+                            Finalist, Middle East/Africa), 2015
+                          </li>
+                          <li>Desktop Publishing, 2008</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-											<div class="timeline-icon color-1">
-												<i class="icon-pen2"></i>
-											</div>
+          <section class="colorlib-contact" data-section="contact">
+            <div class="colorlib-narrow-content">
+              <div class="row">
+                <div
+                  class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                  data-animate-effect="fadeInLeft"
+                >
+                  <span class="heading-meta">Get in Touch</span>
+                  <h2 class="colorlib-heading">Contact</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-globe-outline"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>
+                        <a href="mailto:balogunridwan@gmail.com"
+                          >balogunridwan@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
 
-											<div class="timeline-label">
-												<h2><a href="#">Software Developer,</a><span> 2019</span></h2>
-												<p><strong>TechDigi Media Solutions, Lagos, Nigeria</strong></p>
-												<ul>
-													<li>
-														Developed a full-stacked banking app with React, MUI, Firebase
-													</li>
-													<li>
-														Developed a full-stacked Facial Recognition app, ReactJS and
-														ClariFai API.
-													</li>
-													<li>
-														Liaised with back-end developers, front-end developers, quality
-														assurance testers, and CTOs as needed.
-													</li>
-													<li>
-														Managed time-sensitive updates, including content changes and
-														database upgrades.
-													</li>
-													<li><strong>Tools:</strong> ReactJS, jQuery, Bootstrap, ClariFai
-														API, MUI, ExpressJS, NodeJS, Firebase, PostgreSQL.</li>
-												</ul>
-											</div>
-										</div>
-									</article>
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-whatsapp"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>
+                        <a
+                          href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is"
+                          >WhatsApp</a
+                        >
+                      </p>
+                    </div>
+                  </div>
 
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-phone"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p><a href="tel://2348078197526">+234 807 819 7526</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-md-push-1">
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-social-facebook-circular"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p><a href="https://facebook.com/ridbay">Facebook</a></p>
+                    </div>
+                  </div>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-social-linkedin"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p>
+                        <a href="https://linkedin.com/in/ridbay">Linkedin</a>
+                      </p>
+                    </div>
+                  </div>
 
-												<h2><a href="#">Software Developer & IT Business Analyst, </a> <span>
-														2018</span></h2>
-												<p><strong>Artoas Global Limted, Lagos, Nigeria </strong></p>
-												<ul>
-													<li>
-														Documented business functional & non-functional requirements.
-													</li>
-													<li>
-														Generated process/data flow diagrams, use cases and user guides.
-													</li>
-													<li>
-														Collaborated and liaised with development, client, and quality
-														assurance teams.
-													</li>
-													<li>
-														Developed new websites and redeveloped existing websites as
-														required.
-													</li>
-													<li>Proactively monitored applications, system software and/or
-														hardware operations</li>
-													<li>Provided administration and maintenance of Linux servers and
-														storage facilities.</li>
-													<li><strong>Tools:</strong> ReactJS, Trello, Slack, Pivotal Tracker,
-														Microsoft Office Suite, Google Drive, CMS, WHM/Cpanel</li>
-												</ul>
-											</div>
-										</div>
-									</article>
+                  <div
+                    class="colorlib-feature colorlib-feature-sm animate-box"
+                    data-animate-effect="fadeInLeft"
+                  >
+                    <div class="colorlib-icon">
+                      <i class="icon-social-github"></i>
+                    </div>
+                    <div class="colorlib-text">
+                      <p><a href="https://github.com/ridbay">Github</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end:colorlib-main -->
+      </div>
+      <!-- end:container-wrap -->
+    </div>
+    <!-- end:colorlib-page -->
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-3">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Digital Marketing Analyst, </a> <span> 2017</span></h2>
-												<p><strong>Red Media, Lagos, Nigeria</strong></p>
-												<ul>
-													<li>
-														Developed digital marketing campaign strategies.
-													</li>
-													<li>
-														Bench-marked performance across all online channels and advised
-														on KPIs.
-													</li>
-													<li>
-														Used methodical performance analysis to influence/support
-														campaign strategies.
-													</li>
-													<li>
-														Performed ROI analysis to evaluate the efficiency and
-														effectiveness of different marketing campaigns.
-													</li>
-													<li><strong>Tools:</strong> Google AdWords, Adsense, Analytics,
-														Facebook/Twitter/Linkedin Ad Managers.</li>
-												</ul>
-											</div>
-										</div>
-									</article>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="js/jquery.countTo.js"></script>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-4">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Website Developer & Digital Marketer</a> <span> 2016
-													</span></h2>
-												<p><strong>Niji Group, Lagos, Nigeria</strong> </p>
-												<ul>
-													<li>
-														Developed all the company’s websites.
-													</li>
-													<li>
-														Implemented Search Engine Optimization (SEO) and Search Engine
-														Marketing (SEM) programs.
-													</li>
-													<li>
-														Monitored website content for out-of-date postings.
-													</li>
-													<li>
-														Provided input, helped formulate online strategy and approached
-														consistency with overall company objectives.
-													</li>
-													<li>
-														Managed, maintained and enhanced the company’s presence on
-														social media sites (e.g. Facebook, Twitter, YouTube)
-													</li>
-													<li>Created e-mail marketing and promotion campaigns.</li>
-													<li><strong>Tools: </strong>Wordpress, Google AdWords, Adsense,
-														Analytics, Facebook/Twitter/Linkedin Ad Managers.</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-5">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Team captain</a> <span> 2015</span></h2>
-												<p><strong>Google Online Marketing Challenge (Middle East & Africa
-														Business Award Finals)</strong> </p>
-												<ul>
-													<li>
-														Partnered with Niji Group (www.nijigroup.com) on creating a
-														3-week Google Adwords online marketing campaign to increase the
-														awareness of their line of processed foods, engineering, farms
-														and a hotel service and to increase their website traffic.
-													</li>
-													<li>
-														At the end of the 3 weeks campaign, we achieved <b>75.8 thousand
-															impressions, 694 clicks to the website, $0.36 average CPC
-															and 0.92% CTR </b> with Google Analytics data indicating
-														that the campaign increased Niji Group’s website page views as
-														there are <b>280 new visits, 257 unique visitors and 410 page
-															views</b>.
-													</li>
-													<li>
-														We made it to the 2015 GOMC finals (Middle East/Africa Business
-														category) out of over <b>100,000</b> teams that participated
-														globally.
-													</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry begin animate-box"
-										data-animate-effect="fadeInBottom">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-none">
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-about" data-section="certification">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="col-md-12">
-										<div class="about-desc">
-											<span class="heading-meta">Certifications</span>
-											<h2 class="colorlib-heading">My Certifications</h2>
-											<ul>
-												<li>Complete React Developer (React, Redux, Hooks, GraphQL), Udemy 2019
-												</li>
-												<li>The Complete Web Developer, Udemy 2019</li>
-												<li>Selenium Web Driver with Java (App/Software automation testing),
-													Udemy 2018</li>
-												<li>Mobile Web Specialist, Andela Learning Community 2018</li>
-												<li>Front End Web Development, Andela Learning Community 2018</li>
-												<li>Telecommunication Power Training, University of Huawei, 2018</li>
-												<li>Javascript, PHP, SQL Training, Sololearn 2018</li>
-												<li>Android Development for Beginners,Andela Learning Community 2017
-												</li>
-												<li>Google Adwords Search Certification, 2017</li>
-												<li>Google Analytics Certification, 2017</li>
-												<li>Google Mobile Sites Certification, 2017</li>
-												<li>Digital Skills for Africa Online Marketing Fundamentals, 2017</li>
-												<li>Google Online Marketing Challenge (Adwords Business Finalist, Middle
-													East/Africa), 2015</li>
-												<li>Desktop Publishing, 2008</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="colorlib-contact" data-section="contact">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Get in Touch</span>
-								<h2 class="colorlib-heading">Contact</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-5">
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-globe-outline"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="mailto:me@balogunridwan.com">me@balogunridwan.com</a></p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-whatsapp"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a
-												href="https://api.whatsapp.com/send?phone=2348078197526&text=Hi%20Ridwan%20Balogun,%20My%20name%20is">WhatsApp</a>
-										</p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-phone"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="tel://2348078197526">+234 807 819 7526</a></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-7 col-md-push-1">
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-social-facebook-circular"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://facebook.com/ridbay">Facebook</a></p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-social-linkedin"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://linkedin.com/in/ridbay">Linkedin</a></p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-social-github"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://github.com/ridbay">Github</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-</body>
-
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
