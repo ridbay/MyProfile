@@ -4,12 +4,11 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
-
 // Colors
 $title-color: #000;
 $desc-color: #696969;
-$theme-color: #ff4181;
-$primary-color: #fed643;
+$theme-color: #415dff;
+$primary-color: #fe43c7;
 $border-color: #ececec;
 $white-color: #fff;
 $ash-color: #f4f9fd;
@@ -40,19 +39,19 @@ $plaseholder: #888;
 
 // font-family
 
-$font-family-f:  'Frank Ruhl Libre', serif;
-$font-family-r:  'Roboto', sans-serif;
+$font-family-f: "Frank Ruhl Libre", serif;
+$font-family-r: "Roboto", sans-serif;
 
 // font-size
 
-$fs-base:   15px !default;
-$fs-small: 	15px;
-$fs-h1:		60px;
-$fs-h2: 	36px;
-$fs-h3: 	24px;
-$fs-h4: 	20px;
-$fs-h5: 	18px;
-$fs-h6: 	16px;		
+$fs-base: 15px !default;
+$fs-small: 15px;
+$fs-h1: 60px;
+$fs-h2: 36px;
+$fs-h3: 24px;
+$fs-h4: 20px;
+$fs-h5: 18px;
+$fs-h6: 16px;
 
 //  transition
 $transition: all 0.3s ease;
