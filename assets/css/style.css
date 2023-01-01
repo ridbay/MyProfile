@@ -150,6 +150,17 @@
     animation: animate1 20s infinite linear;
   }
 }
+@media (max-width: 992px) {
+  .banner .banner-area .banner-thumb::before {
+    top: -70px;
+    left: -138px;
+    background: url(../images/banner/04.png);
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 500px;
+    animation: animate1 20s infinite linear;
+  }
+}
 .banner .banner-area .banner-thumb img {
   position: relative;
   z-index: 1;
