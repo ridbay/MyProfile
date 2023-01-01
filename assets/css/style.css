@@ -143,7 +143,7 @@
   .banner .banner-area .banner-thumb::before {
     top: -70px;
     left: 15px;
-    background: url(https://res.cloudinary.com/ridbay/image/upload/v1672336173/My%20Website%20Assets/01.png);
+    background: url(../images/banner/01.png);
     background-repeat: no-repeat;
     width: 580px;
     height: 500px;
