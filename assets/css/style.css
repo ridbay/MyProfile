@@ -3201,8 +3201,9 @@ blockquote::before {
   list-style: none;
 }
 .social-link-list li a {
-  width: 40px;
-  height: 40px;
+  padding-top: 5px;
+  width: 50px;
+  height: 50px;
   line-height: 37px;
   text-align: center;
   color: #415dff;
@@ -3489,7 +3490,7 @@ blockquote::before {
 }
 .footer .text-center .social-link-list li a {
   margin: 7px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .footer .text-center .social-link-list li a:hover {
   transform: translateY(-5px);
