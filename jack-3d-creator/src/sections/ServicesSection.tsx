@@ -3,33 +3,27 @@ import FadeIn from '../components/FadeIn';
 const SERVICES = [
   {
     number: '01',
-    name: '3D Modeling',
+    name: 'Software Engineering',
     description:
-      'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
+      'Diligent software engineer with 5+ years of experience, building innovative and cutting-edge business solutions for an impressive suite of clients within its global reach.',
   },
   {
     number: '02',
-    name: 'Rendering',
+    name: 'Digital Marketing/SEO',
     description:
-      'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
+      'Highly capable marketing manager with 8+ years experience, seeking to leverage proven leadership and strategy skills to grow revenue.',
   },
   {
     number: '03',
-    name: 'Motion Design',
+    name: 'IT Business Analysis',
     description:
-      'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
+      'Experienced professional with comprehensive strategic planning and implementation skills. Innovative problem solver, with the ability to see the business and technical sides of a problem.',
   },
   {
     number: '04',
-    name: 'Branding',
+    name: 'IT Project Management',
     description:
-      "Crafting cohesive visual identities -- from logos to full brand systems -- that communicate a clear and memorable presence.",
-  },
-  {
-    number: '05',
-    name: 'Web Design',
-    description:
-      'Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.',
+      'Experienced in overseeing software projects, detail oriented, a team player, effective at managing all phases of the project life cycle, from planning through deployment.',
   },
 ];
 

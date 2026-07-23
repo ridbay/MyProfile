@@ -66,7 +66,7 @@ export default function AboutSection() {
 
         <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
           <AnimatedText
-            text="With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
+            text="With more than five years of experience across backend and frontend development, i focus on Node.js, React, and TypeScript, and i've shipped fintech, banking, and e-commerce products for clients across Nigeria and beyond. I truly enjoy working with businesses that aim to stand out and build something that lasts. Let's build something incredible together!"
             className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
           />
