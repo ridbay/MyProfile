@@ -1,7 +1,7 @@
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import FadeIn from '../components/FadeIn';
-import FloatingArt from '../components/FloatingArt';
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import FadeIn from "../components/FadeIn";
+import FloatingArt from "../components/FloatingArt";
 
 interface Experience {
   number: string;
@@ -15,74 +15,80 @@ interface Experience {
 
 const EXPERIENCE: Experience[] = [
   {
-    number: '01',
-    period: 'May 2023 – Present',
-    role: 'Team Lead / Senior Back-End Engineer',
-    company: 'Pandar Resources, Lagos',
+    number: "01",
+    period: "2023",
+    role: "Senior Software Engineer",
+    company: "Pandar Resources, Lagos",
     description:
       "I lead the team behind the APIs that power e-wallets and crypto trading for Pandar, Redem, and Crane. When Redem merged into Pandar, I moved every user and every record across with zero downtime and nothing lost. Code reviews, unit tests, and CI/CD aren't extras on my team. They're the standard.",
-    tags: ['Node.js', 'TypeScript', 'Express', 'MySQL', 'Redis', 'Linux'],
-    art: ['/3d/coin.png', '/3d/money_with_wings.png'],
+    tags: ["Node.js", "TypeScript", "Express", "MySQL", "Redis", "Linux"],
+    art: ["/3d/coin.png", "/3d/money_with_wings.png"],
   },
   {
-    number: '02',
-    period: 'Apr 2021 – Apr 2023',
-    role: 'Software Development Engineer',
-    company: 'WEMA Bank Plc., Marina, Lagos',
+    number: "02",
+    period: "2021",
+    role: "Software Development Engineer",
+    company: "WEMA Bank Plc., Marina, Lagos",
     description:
       "Inside one of Nigeria's oldest banks, I built and maintained the web applications behind account management, transactions, payments, and reporting, shipping side by side with designers, product owners, scrum masters, and testers. Banking software has to be trusted, and I built it that way.",
-    tags: ['Banking', 'Web Apps', 'Unit Testing', 'Code Review'],
-    art: ['/3d/bank.png', '/3d/credit_card.png'],
+    tags: ["Banking", "Web Apps", "Unit Testing", "Code Review"],
+    art: ["/3d/bank.png", "/3d/credit_card.png"],
   },
   {
-    number: '03',
-    period: 'Apr 2020 – Mar 2021',
-    role: 'Full-Stack Developer / Tech Lead (Remote)',
-    company: 'Prudent Digital International, Kent, England',
+    number: "03",
+    period: "2020",
+    role: "Full-Stack Developer / Tech Lead (Remote)",
+    company: "Prudent Digital International, Kent, England",
     description:
-      'Remote, for a team in Kent, England. I built both sides of e-commerce and real estate applications, set the technical direction for the project team, and mentored the junior engineers coming up behind me.',
-    tags: ['Full-Stack', 'E-commerce', 'Tech Lead', 'Mentoring'],
-    art: ['/3d/shopping_cart.png', '/3d/house.png'],
+      "Remote, for a team in Kent, England. I built both sides of e-commerce and real estate applications, set the technical direction for the project team, and mentored the junior engineers coming up behind me.",
+    tags: ["Full-Stack", "E-commerce", "Tech Lead", "Mentoring"],
+    art: ["/3d/shopping_cart.png", "/3d/house.png"],
   },
   {
-    number: '04',
-    period: 'Feb 2018 – Mar 2020',
-    role: 'Website Developer & IT Business Analyst',
-    company: 'Artoas Global Limited, Lagos',
+    number: "04",
+    period: "2018",
+    role: "Website Developer & IT Business Analyst",
+    company: "Ar20toas Global Limited, Lagos",
     description:
-      'Half analyst, half builder. I translated business needs into crisp requirements, process flows, and use cases, then built and rebuilt the websites myself and kept the Linux servers underneath them humming.',
-    tags: ['Business Analysis', 'Web Development', 'Linux Admin', 'QA'],
-    art: ['/3d/bar_chart.png', '/3d/clipboard.png'],
+      "Half analyst, half builder. I translated business needs into crisp requirements, process flows, and use cases, then built and rebuilt the websites myself and kept the Linux servers underneath them humming.",
+    tags: ["Business Analysis", "Web Development", "Linux Admin", "QA"],
+    art: ["/3d/bar_chart.png", "/3d/clipboard.png"],
   },
   {
-    number: '05',
-    period: 'Oct 2015 – May 2017',
-    role: 'Website Developer & Digital Marketer',
-    company: 'Niji Group, Lagos',
+    number: "05",
+    period: "2015",
+    role: "Website Developer & Digital Marketer",
+    company: "Niji Group, Lagos",
     description:
       "I built every one of the company's websites, then made sure people actually found them: SEO, SEM, social media, and email campaigns that put an agricultural conglomerate firmly on the map online.",
-    tags: ['Web Development', 'SEO', 'SEM', 'Social Media'],
-    art: ['/3d/megaphone.png', '/3d/globe_with_meridians.png'],
+    tags: ["Web Development", "SEO", "SEM", "Social Media"],
+    art: ["/3d/megaphone.png", "/3d/globe_with_meridians.png"],
   },
   {
-    number: '06',
-    period: 'Jan 2015 – Jul 2015',
-    role: 'Team Captain, Business Award Finalist',
-    company: 'Google Online Marketing Challenge (Middle East & Africa)',
+    number: "06",
+    period: "2015",
+    role: "Team Captain, Business Award Finalist",
+    company: "Google Online Marketing Challenge (Middle East & Africa)",
     description:
-      'My first big stage. I captained a team that ran a 3-week Google AdWords campaign for Niji Group and took it all the way to the Middle East & Africa Business Award finals: 75,800 impressions, 694 clicks, and a 0.92% CTR.',
-    tags: ['Google AdWords', 'Leadership', 'Campaign Strategy'],
-    art: ['/3d/trophy.png'],
+      "My first big stage. I captained a team that ran a 3-week Google AdWords campaign for Niji Group and took it all the way to the Middle East & Africa Business Award finals: 75,800 impressions, 694 clicks, and a 0.92% CTR.",
+    tags: ["Google AdWords", "Leadership", "Campaign Strategy"],
+    art: ["/3d/trophy.png"],
   },
 ];
 
 const TOTAL_CARDS = EXPERIENCE.length;
 
-function ExperienceCard({ experience, index }: { experience: Experience; index: number }) {
+function ExperienceCard({
+  experience,
+  index,
+}: {
+  experience: Experience;
+  index: number;
+}) {
   const cardRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: cardRef,
-    offset: ['start end', 'start start'],
+    offset: ["start end", "start start"],
   });
 
   const targetScale = 1 - (TOTAL_CARDS - 1 - index) * 0.03;
@@ -102,7 +108,7 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
           <div className="flex items-center gap-4 sm:gap-6">
             <span
               className="font-black text-[#D7E2EA] leading-none"
-              style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
+              style={{ fontSize: "clamp(3rem, 10vw, 140px)" }}
             >
               {experience.number}
             </span>
@@ -137,7 +143,7 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
         <div className="relative flex flex-col gap-5 sm:gap-6">
           <p
             className="text-[#D7E2EA] font-light leading-relaxed max-w-3xl lg:max-w-[58%]"
-            style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.25rem)', opacity: 0.7 }}
+            style={{ fontSize: "clamp(0.9rem, 1.6vw, 1.25rem)", opacity: 0.7 }}
           >
             {experience.description}
           </p>
@@ -159,11 +165,14 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="relative bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
+    <section
+      id="experience"
+      className="relative bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32"
+    >
       <FadeIn>
         <h2
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-16 sm:mb-20 md:mb-28"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
           Experience
         </h2>
@@ -171,7 +180,11 @@ export default function ExperienceSection() {
 
       <div className="relative">
         {EXPERIENCE.map((experience, i) => (
-          <ExperienceCard key={experience.number} experience={experience} index={i} />
+          <ExperienceCard
+            key={experience.number}
+            experience={experience}
+            index={i}
+          />
         ))}
       </div>
     </section>
