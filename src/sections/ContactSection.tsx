@@ -1,6 +1,6 @@
-import FadeIn from '../components/FadeIn';
-import ContactButton from '../components/ContactButton';
-import { PROFILE, SOCIALS } from '../data/profile';
+import FadeIn from "../components/FadeIn";
+import ContactButton from "../components/ContactButton";
+import { PROFILE, SOCIALS } from "../data/profile";
 
 export default function ContactSection() {
   return (
@@ -12,7 +12,7 @@ export default function ContactSection() {
         <FadeIn>
           <h2
             className="hero-heading font-black uppercase leading-[0.9] tracking-tight"
-            style={{ fontSize: 'clamp(3rem, 11vw, 150px)' }}
+            style={{ fontSize: "clamp(3rem, 11vw, 150px)" }}
           >
             Let&apos;s build
             <br />
@@ -23,10 +23,11 @@ export default function ContactSection() {
         <FadeIn delay={0.1}>
           <p
             className="text-[#D7E2EA] font-light leading-relaxed max-w-[560px]"
-            style={{ fontSize: 'clamp(1rem, 1.8vw, 1.25rem)', opacity: 0.7 }}
+            style={{ fontSize: "clamp(1rem, 1.8vw, 1.25rem)", opacity: 0.7 }}
           >
-            Got a product that needs building, a system that needs to scale, or a team that needs someone to lead the
-            charge? Tell me what you&apos;re working on. The best projects start with a simple hello.
+            Got a product that needs building, a system that needs to scale, or
+            a team that needs someone to lead the charge? Tell me what
+            you&apos;re working on. The best projects start with a simple hello.
           </p>
         </FadeIn>
 
@@ -34,14 +35,14 @@ export default function ContactSection() {
           <a
             href={`mailto:${PROFILE.email}`}
             className="text-[#D7E2EA] font-medium break-all hover:opacity-70 transition-opacity duration-200"
-            style={{ fontSize: 'clamp(1.1rem, 3vw, 2.5rem)' }}
+            style={{ fontSize: "clamp(1.1rem, 3vw, 2.5rem)" }}
           >
             {PROFILE.email}
           </a>
           <a
             href={PROFILE.phoneHref}
             className="text-[#D7E2EA] font-light tracking-wide opacity-60 hover:opacity-100 transition-opacity duration-200"
-            style={{ fontSize: 'clamp(0.95rem, 1.6vw, 1.25rem)' }}
+            style={{ fontSize: "clamp(0.95rem, 1.6vw, 1.25rem)" }}
           >
             {PROFILE.phone}
           </a>
@@ -49,7 +50,11 @@ export default function ContactSection() {
 
         <FadeIn delay={0.3} className="flex flex-wrap justify-center gap-4">
           <ContactButton label="Email Me" href={`mailto:${PROFILE.email}`} />
-          <ContactButton label="Download CV" href={PROFILE.resumeUrl} external />
+          <ContactButton
+            label="Download CV"
+            href={PROFILE.resumeUrl}
+            external
+          />
         </FadeIn>
 
         <FadeIn delay={0.4}>
@@ -73,17 +78,6 @@ export default function ContactSection() {
       <footer className="mt-24 sm:mt-32 pt-6 border-t border-[#D7E2EA]/15 flex flex-col sm:flex-row justify-between gap-3 text-[#D7E2EA] uppercase tracking-widest text-[10px] sm:text-xs opacity-50">
         <span>
           &copy; {new Date().getFullYear()} {PROFILE.fullName}
-        </span>
-        <span>
-          {PROFILE.location} &middot; @{PROFILE.handle} &middot;{' '}
-          <a
-            href="https://github.com/microsoft/fluentui-emoji"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-70 transition-opacity duration-200"
-          >
-            3D art: Fluent Emoji (MIT)
-          </a>
         </span>
       </footer>
     </section>
