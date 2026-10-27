@@ -78,6 +78,12 @@ const TESTIMONIALS: Testimonial[] = [
     quote:
       'Ridwan went over and beyond what was expected. I really liked how much of himself he dedicated to the work and I particularly look forward to working with him again.',
   },
+  {
+    name: 'Wilfred Umukoro',
+    company: 'Seas and Terminal Oil and Gas Limited',
+    quote:
+      "Ridbay, I fondly call him 'Grand Patron'. For the few years I have known him he is such an amazing personality, highly detailed in his communication. He never shy away from responsibilities, always willing to help the growing tech community.. Ridbay is one you can completely trust with everything I.T related without fear because he will deliver professionally.",
+  },
 ];
 
 function initials(name: string) {
