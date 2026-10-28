@@ -64,9 +64,26 @@ export default function ProjectSection() {
                 A scalable human resource management system on serverless cloud architecture
               </p>
             </div>
-            <span className="relative z-10 rounded-full px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest whitespace-nowrap">
-              2026
-            </span>
+            <div className="relative z-10 flex items-center gap-3 flex-wrap">
+              <a
+                href="https://automated-hrms-and-payroll.pages.dev/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm text-white font-medium uppercase tracking-widest transition-transform duration-200 hover:scale-[1.03] whitespace-nowrap"
+                style={{
+                  background:
+                    'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
+                  boxShadow:
+                    '0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset',
+                }}
+              >
+                <span>Live Dashboard</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <span className="rounded-full px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest whitespace-nowrap">
+                2026
+              </span>
+            </div>
           </div>
 
           <p
@@ -78,6 +95,37 @@ export default function ProjectSection() {
             entirely on Cloudflare&apos;s edge, works out payroll for 100 staff in under half a second, and costs
             practically nothing when nobody&apos;s using it.
           </p>
+
+          <a
+            href="https://automated-hrms-and-payroll.pages.dev/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open ZenHR Dashboard"
+            className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D7E2EA]/20 bg-[#161616] transition-all duration-300 hover:border-[#D7E2EA]/60 shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+          >
+            <div className="flex items-center justify-between px-3.5 py-2.5 sm:px-5 sm:py-3 border-b border-[#D7E2EA]/10 bg-[#121212]/90 backdrop-blur">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
+                <span className="ml-2 truncate text-[11px] sm:text-xs tracking-wide text-[#D7E2EA]/50 font-mono">
+                  automated-hrms-and-payroll.pages.dev/dashboard
+                </span>
+              </div>
+              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#D7E2EA]/60 group-hover:text-white transition-colors duration-200 inline-flex items-center gap-1">
+                <span>Open Dashboard</span>
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+            <div className="aspect-[16/10] overflow-hidden bg-[#0C0C0C]">
+              <img
+                src="/projects/zenhr.jpg"
+                alt="ZenHR Enterprise HRMS & Payroll Dashboard"
+                loading="lazy"
+                className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              />
+            </div>
+          </a>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {STATS.map((stat) => (
@@ -108,16 +156,27 @@ export default function ProjectSection() {
             ))}
           </ul>
 
-          <ul className="flex flex-wrap gap-2">
-            {STACK.map((tag) => (
-              <li
-                key={tag}
-                className="rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs uppercase tracking-widest text-[#D7E2EA] bg-[#D7E2EA]/10"
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+            <ul className="flex flex-wrap gap-2">
+              {STACK.map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs uppercase tracking-widest text-[#D7E2EA] bg-[#D7E2EA]/10"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="https://automated-hrms-and-payroll.pages.dev/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D7E2EA] text-xs sm:text-sm font-medium uppercase tracking-widest underline decoration-[#B600A8] decoration-2 underline-offset-[6px] hover:opacity-70 transition-opacity duration-200 inline-flex items-center gap-1.5"
+            >
+              <span>Visit Live Dashboard</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </article>
       </FadeIn>
 
