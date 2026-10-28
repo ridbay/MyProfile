@@ -1,41 +1,44 @@
-import FadeIn from '../components/FadeIn';
-import FloatingArt from '../components/FloatingArt';
-import ProjectCard from '../components/ProjectCard';
-import { PROJECTS, SDKS } from '../data/projects';
+import FadeIn from "../components/FadeIn";
+import FloatingArt from "../components/FloatingArt";
+import ProjectCard from "../components/ProjectCard";
+import { PROJECTS, SDKS } from "../data/projects";
 
 const STATS = [
-  { value: '911', label: 'Automated tests, all green' },
-  { value: '~250ms', label: 'Response time from Lagos' },
-  { value: '$5/mo', label: 'A month, for up to 5,000 staff' },
-  { value: '~300', label: 'API endpoints' },
+  { value: "911", label: "Automated tests, all green" },
+  { value: "~250ms", label: "Response time from Lagos" },
+  { value: "$5/mo", label: "A month, for up to 5,000 staff" },
+  { value: "~300", label: "API endpoints" },
 ];
 
-const HIGHLIGHTS = [
-  'Every company’s data walled off from the next, enforced right at the data layer',
-  'Payroll that knows Nigerian law: PAYE, pension, NHF, NSITF, and ITF, with every remittance deadline turned into a dated task',
-  'An AI HR assistant that re-checks who’s asking before every single answer',
-  'Everything else HR needs: people, attendance, leave, hiring, performance reviews, offboarding, and payslips',
-];
+// const HIGHLIGHTS = [
+//   'Every company’s data walled off from the next, enforced right at the data layer',
+//   'Payroll that knows Nigerian law: PAYE, pension, NHF, NSITF, and ITF, with every remittance deadline turned into a dated task',
+//   'An AI HR assistant that re-checks who’s asking before every single answer',
+//   'Everything else HR needs: people, attendance, leave, hiring, performance reviews, offboarding, and payslips',
+// ];
 
 const STACK = [
-  'Cloudflare Workers',
-  'D1',
-  'R2',
-  'Workers AI',
-  'Cloudflare Pages',
-  'React',
-  'TypeScript',
-  'TanStack Query',
-  'Wrangler',
+  "Cloudflare Workers",
+  "D1",
+  "R2",
+  "Workers AI",
+  "Cloudflare Pages",
+  "React",
+  "TypeScript",
+  "TanStack Query",
+  "Wrangler",
 ];
 
 export default function ProjectSection() {
   return (
-    <section id="projects" className="relative bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pb-24 sm:pb-28 md:pb-36">
+    <section
+      id="projects"
+      className="relative bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pb-24 sm:pb-28 md:pb-36"
+    >
       <FadeIn>
         <h2
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-16 sm:mb-20 md:mb-24"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
         >
           Projects
         </h2>
@@ -56,12 +59,16 @@ export default function ProjectSection() {
               </span>
               <h3
                 className="text-[#D7E2EA] font-black uppercase leading-none"
-                style={{ fontSize: 'clamp(2.5rem, 7vw, 96px)' }}
+                style={{ fontSize: "clamp(2.5rem, 7vw, 96px)" }}
               >
                 ZenHR
               </h3>
-              <p className="text-[#D7E2EA] font-medium uppercase leading-snug" style={{ fontSize: 'clamp(1rem, 1.8vw, 1.5rem)' }}>
-                A scalable human resource management system on serverless cloud architecture
+              <p
+                className="text-[#D7E2EA] font-medium uppercase leading-snug"
+                style={{ fontSize: "clamp(1rem, 1.8vw, 1.5rem)" }}
+              >
+                A scalable human resource management system on serverless cloud
+                architecture
               </p>
             </div>
             <div className="relative z-10 flex items-center gap-3 flex-wrap">
@@ -72,9 +79,9 @@ export default function ProjectSection() {
                 className="inline-flex items-center gap-2 rounded-full px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm text-white font-medium uppercase tracking-widest transition-transform duration-200 hover:scale-[1.03] whitespace-nowrap"
                 style={{
                   background:
-                    'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
+                    "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",
                   boxShadow:
-                    '0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset',
+                    "0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset",
                 }}
               >
                 <span>Live Dashboard</span>
@@ -85,16 +92,6 @@ export default function ProjectSection() {
               </span>
             </div>
           </div>
-
-          <p
-            className="text-[#D7E2EA] font-light leading-relaxed max-w-3xl lg:max-w-[60%]"
-            style={{ fontSize: 'clamp(0.95rem, 1.5vw, 1.2rem)', opacity: 0.7 }}
-          >
-            Many Nigerian businesses still run payroll on spreadsheets, and the cloud HR tools that could save them cost
-            more than they can afford. So I built ZenHR: a complete HR and payroll platform with no servers at all. It runs
-            entirely on Cloudflare&apos;s edge, works out payroll for 100 staff in under half a second, and costs
-            practically nothing when nobody&apos;s using it.
-          </p>
 
           <a
             href="https://automated-hrms-and-payroll.pages.dev/dashboard"
@@ -126,36 +123,22 @@ export default function ProjectSection() {
               />
             </div>
           </a>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {STATS.map((stat) => (
-              <div key={stat.label} className="flex flex-col gap-2">
-                <span className="hero-heading font-black leading-none" style={{ fontSize: 'clamp(2rem, 4.5vw, 64px)' }}>
-                  {stat.value}
-                </span>
-                <span className="text-[#D7E2EA] uppercase tracking-widest text-[10px] sm:text-xs opacity-60">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+            <p
+              className="text-[#D7E2EA] font-light leading-relaxed"
+              style={{
+                fontSize: "clamp(0.95rem, 1.5vw, 1.2rem)",
+                opacity: 0.7,
+              }}
+            >
+              Many Nigerian businesses still run payroll on spreadsheets, and
+              the cloud HR tools that could save them cost more than they can
+              afford. So I built ZenHR: a complete HR and payroll platform with
+              no servers at all. It runs entirely on Cloudflare&apos;s edge,
+              works out payroll for 100 staff in under half a second, and costs
+              practically nothing when nobody&apos;s using it.
+            </p>
           </div>
-
-          <ul className="grid md:grid-cols-2 gap-x-10 gap-y-4">
-            {HIGHLIGHTS.map((item) => (
-              <li
-                key={item}
-                className="flex gap-3 text-[#D7E2EA] font-light leading-relaxed"
-                style={{ fontSize: 'clamp(0.9rem, 1.3vw, 1.05rem)' }}
-              >
-                <span
-                  className="mt-[0.55em] w-2 h-2 rounded-full shrink-0"
-                  style={{ background: 'linear-gradient(123deg, #B600A8, #7621B0, #BE4C00)' }}
-                />
-                <span className="opacity-80">{item}</span>
-              </li>
-            ))}
-          </ul>
-
           <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
             <ul className="flex flex-wrap gap-2">
               {STACK.map((tag) => (
@@ -183,7 +166,11 @@ export default function ProjectSection() {
       <div className="max-w-6xl mx-auto mt-4 sm:mt-5">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {PROJECTS.map((project, i) => (
-            <FadeIn key={project.name} delay={(i % 3) * 0.08} className="h-full">
+            <FadeIn
+              key={project.name}
+              delay={(i % 3) * 0.08}
+              className="h-full"
+            >
               <ProjectCard project={project} />
             </FadeIn>
           ))}
@@ -194,14 +181,18 @@ export default function ProjectSection() {
         <FadeIn>
           <h3
             className="text-[#D7E2EA] font-black uppercase mb-8 sm:mb-10"
-            style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)' }}
+            style={{ fontSize: "clamp(1.75rem, 4vw, 3.5rem)" }}
           >
             Open-source SDKs
           </h3>
         </FadeIn>
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
           {SDKS.map((project, i) => (
-            <FadeIn key={project.name} delay={(i % 3) * 0.08} className="h-full">
+            <FadeIn
+              key={project.name}
+              delay={(i % 3) * 0.08}
+              className="h-full"
+            >
               <ProjectCard project={project} />
             </FadeIn>
           ))}
