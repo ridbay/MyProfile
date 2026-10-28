@@ -3,12 +3,12 @@ import FloatingArt from "../components/FloatingArt";
 import ProjectCard from "../components/ProjectCard";
 import { PROJECTS, SDKS } from "../data/projects";
 
-const STATS = [
-  { value: "911", label: "Automated tests, all green" },
-  { value: "~250ms", label: "Response time from Lagos" },
-  { value: "$5/mo", label: "A month, for up to 5,000 staff" },
-  { value: "~300", label: "API endpoints" },
-];
+// const STATS = [
+//   { value: "911", label: "Automated tests, all green" },
+//   { value: "~250ms", label: "Response time from Lagos" },
+//   { value: "$5/mo", label: "A month, for up to 5,000 staff" },
+//   { value: "~300", label: "API endpoints" },
+// ];
 
 // const HIGHLIGHTS = [
 //   'Every company’s data walled off from the next, enforced right at the data layer',

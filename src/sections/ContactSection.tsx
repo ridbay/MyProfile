@@ -50,11 +50,6 @@ export default function ContactSection() {
 
         <FadeIn delay={0.3} className="flex flex-wrap justify-center gap-4">
           <ContactButton label="Email Me" href={`mailto:${PROFILE.email}`} />
-          <ContactButton
-            label="Download CV"
-            href={PROFILE.resumeUrl}
-            external
-          />
         </FadeIn>
 
         <FadeIn delay={0.4}>

@@ -1,7 +1,6 @@
 import FadeIn from '../components/FadeIn';
 import AnimatedText from '../components/AnimatedText';
 import ContactButton from '../components/ContactButton';
-import { PROFILE } from '../data/profile';
 
 const STATS = [
   { value: '10+', label: 'Years shipping software' },
@@ -93,7 +92,6 @@ export default function AboutSection() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <ContactButton />
-            <ContactButton label="Download CV" href={PROFILE.resumeUrl} external />
           </div>
         </div>
       </div>
