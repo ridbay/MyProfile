@@ -48,7 +48,7 @@ const EXPERIENCE: Experience[] = [
     number: "04",
     period: "2018",
     role: "Website Developer & IT Business Analyst",
-    company: "Ar20toas Global Limited, Lagos",
+    company: "Artoas Global Limited, Lagos",
     description:
       "Half analyst, half builder. I translated business needs into crisp requirements, process flows, and use cases, then built and rebuilt the websites myself and kept the Linux servers underneath them humming.",
     tags: ["Business Analysis", "Web Development", "Linux Admin", "QA"],
